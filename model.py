@@ -4,6 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torchvision.models as models
 from dataclasses import dataclass
+from config import *
 
 
 class EncoderCNN(nn.Module):
@@ -47,10 +48,10 @@ class DecoderRNN(nn.Module):
     
 @dataclass
 class ITTConfig:
-    batch_size = 64
-    hidden_size = 256
-    num_layers = 2
-    n_embd = 256
+    batch_size = BATCH_SIZE
+    hidden_size = HIDDEN_SIZE
+    num_layers = NUM_LAYERS
+    n_embd = N_EMBD
     pad_token = 0
     vocab_size = None # is set in train.py
 
