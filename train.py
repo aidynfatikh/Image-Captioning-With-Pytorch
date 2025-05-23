@@ -137,7 +137,7 @@ try:
         torch.cuda.synchronize()
         t1 = time.time()
         dt = (t1 - t0)*1000
-        tokens_per_sec = (modelconfig.batch_size) / (t1 - t0)
+        tokens_per_sec = (BATCH_SIZE) / (t1 - t0)
         now = datetime.now()
         print(f"[{now.strftime("%Y-%m-%d %H:%M:%S")}] step: {step}/{MAX_STEPS}\tloss: {loss.item():.3f}\tdt: {dt:.3f} ms\timgs/sec: {tokens_per_sec:.3f}")
 
