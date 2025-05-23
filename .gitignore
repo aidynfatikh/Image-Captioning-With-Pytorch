@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+*.env
+
+# VSCode and PyCharm
+.vscode/
+.idea/
+
+# PyTorch & model checkpoints
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Dataset & output artifacts
+dataset/
+raw/
+checkpoints/
+*.csv
+*.json
+*.pkl
+*.npz
+*.npy
+*.zip
+
+# Streamlit
+.streamlit/
+
+# Logs and debu
